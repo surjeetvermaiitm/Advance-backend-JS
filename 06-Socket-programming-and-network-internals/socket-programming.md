@@ -39,3 +39,9 @@
 ![1708449015643](image/socket-programming/1708449015643.png)
 
 ![1708449068830](image/socket-programming/1708449068830.png)
+
+Day 2
+
+![1708616778565](image/socket-programming/1708616778565.png)
+
+![1708619060685](image/socket-programming/1708619060685.png)
