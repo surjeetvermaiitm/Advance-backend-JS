@@ -1,19 +1,17 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const { PORT } = require('./config/server.config');
-const apiRouter = require('./routes');
-const bodyParser = require("body-parser");
-const router=express.Router();
+const apirouter = require('./routes');
 
 const app = express();
+
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 app.use(bodyParser.text());
-app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/api', apiRouter); // localhost:3000/api/home
+app.use('/api', apirouter); // localhost:3000/api/v2/ping
 
-app.get("/", (req, res) => {
-    return res.json({ msg: "ok" });
-  });
+
 app.listen(PORT, () => {
     console.log(`Started server at port: ${PORT}`);
 });

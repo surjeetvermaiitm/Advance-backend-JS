@@ -1,10 +1,12 @@
+//API router
 const express = require('express');
-const homePingController = require('../controllers/home.controller');
+const v1Router=require('./v1');
+const v2Router=require('./v2');
 
 const router = express.Router(); // express router object
 
-router.get('/home', homePingController);  // localhost:3000/api/home
+router.use("/v1",v1Router)
+router.use("/v2",v2Router)
 
-router.get('/homecoming', homePingController);
 
 module.exports = router;
