@@ -61,6 +61,7 @@ submision response queue -> Microservice 2 - code submission service
 3. How Output matching works?
 - string matching algorithm
 
+![alt text](image.png)
 
 
 
